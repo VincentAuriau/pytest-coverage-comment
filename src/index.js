@@ -395,7 +395,7 @@ const getChangedFiles = async (options, pr_number) => {
     if (response.status !== 200) {
       core.setFailed(
         `The GitHub API for comparing the base and head commits for this ${eventName} event returned ${response.status}, expected 200. ` +
-          "Please submit an issue on this action's GitHub repo.",
+        "Please submit an issue on this action's GitHub repo.",
       );
     }
 
